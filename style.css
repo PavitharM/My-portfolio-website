@@ -1,0 +1,247 @@
+body{
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+}
+body a{
+    color: white;
+    text-decoration: none;
+    
+}
+.nobullet{
+    list-style: none;
+
+}
+#homenavbar nav{
+display: flex
+}
+#homenavbar nav ul{
+    display: flex;
+    text-align: center;
+    padding: 0 0 0 600px;
+    transition: transform 2s;
+    
+} 
+#homenavbar nav li{
+    padding:5px 20px;
+    margin-left: 60px;
+    border: 2px solid rgba(38, 109,233, 0.7);
+    border-radius: 25px;
+    
+}
+#homenavbar h2{
+    margin-left: 5px;
+    font-style: italic;
+    font-weight:1.2em;
+}
+#homenavbar{
+    background-color: black;
+
+}
+
+.iconimage{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;  
+  display: flex;
+  justify-content: center;
+  align-items: center;    
+  position: relative;
+  margin:150px 650px;   
+  border: 5px solid rgb(38, 110, 233);
+}
+
+.iconimage img{
+  width: 100%;
+  height:150%;
+  object-fit: cover; 
+  margin-top: 70px;
+  transition: transform 300ms;
+  animation: zoomInOut 5s infinite ease-in-out;
+
+     
+}
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);  
+  }
+  100% {
+    transform: scale(1);    
+  }
+}
+.iconimage img:hover{
+    transform: scale(105%);
+    
+}
+
+#homenavbar nav ul li:hover{
+    transition: transform 200ms;
+}
+#homenavbar nav ul li:hover{
+    transform: scale(120%);
+    border:2px solid rgba(255, 255, 255, 0.622);
+}
+
+.fullname{
+    display: flex;
+    justify-content: center;
+    font-size: 2.3em;
+    margin-top: -150px;
+    
+}
+.desciption{
+    display: flex;
+    justify-content: center;
+    margin: -50px 250px 0 250px;
+    font-size: 1.1em;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.776);
+}
+.directselect{
+    display: flex;
+    justify-content: center;
+    margin-left: 400px;
+    margin-top: 20px;
+    
+
+}
+.box1{
+    border: 2px solid rgb(38, 110, 233);
+    background-color: rgb(38, 110, 233);
+    padding: 4px 60px 4px 60px;
+    border-radius: 6px;
+    margin-left: -400px;
+    font-size: 1.1em;
+    font-weight: bolder;
+    
+}
+.box2{
+    border: 2px solid rgb(38, 110, 233);
+    padding: 4px 60px 4px 60px;
+    border-radius: 6px;
+    margin-left: 200px;
+    font-size: 1.1em;
+    font-weight: bolder;
+   
+}
+.mouse{
+ width: 100%;
+ height: 90px;
+ display: flex;
+ justify-content: center;
+ margin-top: 40px;
+ animation: scrollAnim 1.6s infinite;;
+ animation: moveUpDown 3s infinite ease-in-out;
+
+}
+
+@keyframes scrollAnim {
+  0% {
+    opacity: 1;
+    top: 12px;
+  }
+  70% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+    top: 38px;
+  }
+}
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px); /* move up */
+  }
+  100% {
+    transform: translateY(0);     /* back down */
+  }
+}
+hr {
+  border: none;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.108);
+  margin-left: 50px;
+  margin-right: 50px;
+}
+#aboutme{
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    
+    
+}
+.para{
+    width: 500px;
+    display: flex row;
+    border: solid rgba(255, 255, 255, 0.292);
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: rgba(255, 255, 255, 0.876);
+    
+
+}
+.a-box{
+    display: flex table-row;
+    width: 500px;
+    border: 2px solid rgba(255, 255, 255, 0.292);
+    border-radius: 10px;
+    margin-left:200px ;
+    padding: 10px 0px 0 10px;
+    
+}
+.twoside{
+    display: flex;
+    justify-content:center;
+    margin:40px;
+    
+}
+.a-box div{
+    width: 100%;
+    margin-top: 50px;
+    background-color: 1D2B3A;
+    border-radius: 20px;
+}
+.a-box h5{
+    font-size: 1.1em;
+    padding-left: 100px;
+    
+}
+.w{
+    padding-left: 100px;
+}
+.a-box img{
+    display: flex;
+    position: relative;
+    width: 50px;
+}
+
+.skils h1{
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    font-size: 2em;
+}
+.skils p{
+    display: flex;
+    justify-content: center;
+    font-size: 1.3em;
+    word-spacing: 3px;
+
+}
+.inroskills{
+    display: flex;
+    margin: 40px 300px 0 300px;
+    justify-content: center;
+    
+}
